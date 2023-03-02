@@ -5,6 +5,8 @@ public class EbookResp {
 
     private String name;
 
+    private Long category1Id;
+
     public Long getId() {
         return id;
     }
@@ -19,6 +21,14 @@ public class EbookResp {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Long getCategory1Id() {
+        return category1Id;
+    }
+
+    public void setCategory1Id(Long category1Id) {
+        this.category1Id = category1Id;
     }
 
     @Override

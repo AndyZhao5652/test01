@@ -3,6 +3,7 @@ package com.andy.test01.controller;
 import com.andy.test01.domain.Ebook;
 import com.andy.test01.req.EbookReq;
 import com.andy.test01.resp.CommonResp;
+import com.andy.test01.resp.EbookResp;
 import com.andy.test01.service.EbookService;
 import jakarta.annotation.Resource;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,16 +21,16 @@ public class EbookController {
 
     @GetMapping("/list")
     public CommonResp list() {
-        CommonResp<List<Ebook>> resp = new CommonResp<>();
-        List<Ebook> list = ebookService.list(null);
+        CommonResp<List<EbookResp>> resp = new CommonResp<>();
+        List<EbookResp> list = ebookService.list(null);
         resp.setContent(list);
         return resp;
     }
 
     @GetMapping("/listlike")
     public CommonResp list(EbookReq req) {
-        CommonResp<List<Ebook>> resp = new CommonResp<>();
-        List<Ebook> list = ebookService.list(req);
+        CommonResp<List<EbookResp>> resp = new CommonResp<>();
+        List<EbookResp> list = ebookService.list(req);
         resp.setContent(list);
         return resp;
     }
