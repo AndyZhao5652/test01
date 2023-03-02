@@ -1,0 +1,15 @@
+Vue start:
+cd D:\Andy\Study\IT\Java\Project\test01\web
+set NODE_OPTIONS=--openssl-legacy-provider
+npm run serve
+
+Vue Build project:
+cd D:\Andy\Study\IT\Java\Project\test01\web
+set NODE_OPTIONS=--openssl-legacy-provider
+npm run build
+
+Ant Design 文档
+使用文档
+https://pro.antdv.com/docs/getting-started
+组件使用
+https://www.antdv.com/components/overview-cn
