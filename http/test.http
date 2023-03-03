@@ -1,4 +1,4 @@
-GET http://localhost:8880/hellotest01
+GET http://localhost:8880/hello
 #Accept: application/json
 
 > {%

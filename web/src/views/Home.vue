@@ -58,21 +58,17 @@
   </a-layout-content>
 </template>
 <script lang="ts">
-import { UserOutlined, LaptopOutlined, NotificationOutlined } from '@ant-design/icons-vue';
+
 import { defineComponent, ref } from 'vue';
+import axios from 'axios';
 export default defineComponent({
-  components: {
-    UserOutlined,
-    LaptopOutlined,
-    NotificationOutlined,
-  },
-  setup() {
-    return {
-      selectedKeys1: ref<string[]>(['2']),
-      selectedKeys2: ref<string[]>(['1']),
-      openKeys: ref<string[]>(['sub1']),
-    };
-  },
+  name: 'Home',
+  setup(){
+    console.log("setup");
+    axios.get("http://localhost:8880/ebook/listlike?name=Vue").then((response) =>{
+      console.log(response);
+    })
+  }
 });
 </script>
 <style>

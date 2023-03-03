@@ -13,3 +13,6 @@ Ant Design 文档
 https://pro.antdv.com/docs/getting-started
 组件使用
 https://www.antdv.com/components/overview-cn
+
+axios installation
+npm install axios@0.21.0 --save
