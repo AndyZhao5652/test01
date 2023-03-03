@@ -5,6 +5,8 @@ public class EbookResp {
 
     private String name;
 
+    private String description;
+
     private Long category1Id;
 
     public Long getId() {
@@ -21,6 +23,14 @@ public class EbookResp {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public Long getCategory1Id() {

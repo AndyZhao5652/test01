@@ -16,3 +16,6 @@ https://www.antdv.com/components/overview-cn
 
 axios installation
 npm install axios@0.21.0 --save
+
+Ant design icon installation
+npm install @ant-design/icons-vue --save
