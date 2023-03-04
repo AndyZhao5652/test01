@@ -9,6 +9,8 @@ public class EbookResp {
 
     private Long category1Id;
 
+    private String cover;
+
     public Long getId() {
         return id;
     }
@@ -31,6 +33,14 @@ public class EbookResp {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getCover() {
+        return cover;
+    }
+
+    public void setCover(String cover) {
+        this.cover = cover;
     }
 
     public Long getCategory1Id() {
