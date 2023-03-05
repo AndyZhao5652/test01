@@ -19,3 +19,7 @@ npm install axios@0.21.0 --save
 
 Ant design icon installation
 npm install @ant-design/icons-vue --save
+
+Alt+Insert: 生成类的 get set, 全选 Ctrl+A全选
+
+Ctrl+Alt+V
